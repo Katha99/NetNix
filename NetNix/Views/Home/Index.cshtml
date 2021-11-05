@@ -18,7 +18,7 @@
     @foreach (var movie in Model.movieList)
     {
         <div class="col-md-12">
-            <p><a href="@Url.Action("Index", "Movie", new { id = movie.id, directorId = movie.director.id})" class="btn btn-primary btn-lg">@movie.name</a></p>
+            <p><a href="@Url.Action("Index", "Movie", new { id = movie.id, directorId = movie.director.id})" class="btn btn-primary btn-lg" style="background-color:darkgrey; width:100%">@movie.name</a></p>
         </div>
         @Html.Hidden(movie.director.id)
     }
